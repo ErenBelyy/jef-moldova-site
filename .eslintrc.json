@@ -1,0 +1,11 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "react/no-unknown-property": ["error", { "ignore": ["object", "args", "attach", "position", "rotation", "intensity", "color", "transparent", "opacity", "distort", "speed", "metalness", "roughness", "wireframe", "count", "factor", "saturation", "fade", "radius", "depth", "sizeAttenuation", "itemSize", "array"] }],
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-anonymous-default-export": "off"
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "out/", "sanity/"]
+}
